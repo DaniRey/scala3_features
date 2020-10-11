@@ -1,5 +1,10 @@
 package ch.danirey.enums
 
+/**
+ * https://dotty.epfl.ch/docs/reference/enums/adts.html
+ * 
+ * Algebraic Data Types
+ */
 enum Tree[+T] {
   case Node(value: T, left: Tree[T], right: Tree[T])
   case Leaf(value: T)

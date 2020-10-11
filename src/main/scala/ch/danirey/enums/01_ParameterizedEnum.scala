@@ -1,5 +1,8 @@
 package ch.danirey.enums
 
+/**
+ * https://dotty.epfl.ch/docs/reference/enums/enums.html
+ */
 enum Color(val rgb: Int) {
   case Red   extends Color(0xFF0000)
   case Green extends Color(0x00FF00)

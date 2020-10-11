@@ -1,5 +1,8 @@
 package ch.danirey.optionalbraces
 
+/**
+ * https://dotty.epfl.ch/docs/reference/other-new-features/indentation.html
+ */
 trait A:
   def f: Int
 

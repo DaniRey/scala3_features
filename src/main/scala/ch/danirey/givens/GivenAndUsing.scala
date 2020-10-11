@@ -2,6 +2,9 @@ package ch.danirey.givens
 
 import ch.danirey.enums.Color
 
+/**
+ * https://dotty.epfl.ch/docs/reference/contextual/givens.html
+ */
 trait Ord[T] {
   def compare(x: T, y: T): Int
   extension (x: T) def < (y: T) = compare(x, y) < 0
