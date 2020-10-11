@@ -10,3 +10,10 @@ lazy val root = project
 
     libraryDependencies += "com.novocode" % "junit-interface" % "0.11" % "test"
   )
+
+scalacOptions ++= Seq(
+  "-Xfatal-warnings",
+  "-Yexplicit-nulls",
+  "-deprecation",
+  "-unchecked"
+)
