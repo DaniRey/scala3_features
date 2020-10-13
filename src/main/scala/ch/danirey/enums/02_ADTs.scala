@@ -5,14 +5,12 @@ package ch.danirey.enums
  * 
  * Algebraic Data Types
  */
-enum Tree[+T] {
+enum Tree[+T]:
   case Node(value: T, left: Tree[T], right: Tree[T])
   case Leaf(value: T)
-}
 
-object UseTree {
-  import Tree.Node
-  import Tree.Leaf
+object UseTree:
+  import Tree._
   
   val x = 
     Node("head", 
@@ -22,4 +20,3 @@ object UseTree {
         Leaf("right_right")
       )
     ) 
-}

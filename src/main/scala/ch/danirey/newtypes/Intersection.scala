@@ -39,6 +39,6 @@ class ReverseText extends Growable[String] with Resettable with Show {
 }
 
 object IntersectionDemo extends App {
-  f(new Text())
-  f(new ReverseText())
+  f(Text())
+  f(ReverseText())
 }
